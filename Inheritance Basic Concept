@@ -1,0 +1,35 @@
+void main(){
+  Car c1 = Car(CarName: "Vigo",CarModel:14850);
+  c1.CarName = "Vigo";
+  c1.CarModel = 148550;
+  c1.carShape();
+  Model1 model= Model1();
+  model.CarName = 'Vigo';
+  model.CarModel = 1244;
+  model.modelname();
+  }
+
+class Car{
+  String engine = ""; //attributes
+  String CarName = "";
+  int CarModel = 0;
+
+Car({this.CarName = 'default',this.CarModel=123}){ //Constructor aur y required hain
+  this.CarName = CarName; //this keyword will access the current class attributes
+  //print(CarName);
+  this.CarModel = CarModel;
+  //print(CarModel);
+
+  // Car({this.CarName='',this.CarModel=''}) 2nd type of constructor
+}
+  carShape(){
+    print('${this.CarName} ${this.CarModel} are the Car Attributes');
+  }
+  
+}
+class Model1 extends Car{
+   modelname(){
+   print(CarName);
+   print(CarModel);
+   }
+   }
