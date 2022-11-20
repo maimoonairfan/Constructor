@@ -1,0 +1,22 @@
+void main(){
+  Car c1 = Car("Vigo",14850);
+  // c1.CarName = "Vigo";
+  // c1.CarModel = 148550;
+  c1.carShape();
+}
+class Car{
+  String engine = ""; //attributes
+  String CarName = "";
+  int CarModel = 0;
+
+Car(CarName,CarModel){ //Constructor
+  this.CarName = CarName; //this keyword will access the current class attributes
+  print(CarName);
+  this.CarModel = CarModel;
+  print(CarModel);
+
+}
+  carShape(){
+    print('${this.CarName} ${this.CarModel} are the Car Attributes');
+  }
+}
